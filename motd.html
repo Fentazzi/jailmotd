@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html>
 <head>
     <meta charset="UTF-8">
-    <title>Тюремный Блок | JailBreak | CSS</title>
+    <title>Тюремный Блок</title>
     <style>
         * {
             box-sizing: border-box;
@@ -10,71 +10,71 @@
             padding: 0;
         }
         body {
-            background-color: #111112;
+            background-color: #0e0e10;
             color: #ffffff;
-            font-family: Arial, sans-serif;
+            font-family: -apple-system, Arial, sans-serif;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
             overflow: hidden;
         }
-        .card {
-            width: 800px;
-            background-color: #19191a;
-            border-radius: 10px;
-            border: 1px solid #333335;
-            box-shadow: 0 8px 24px rgba(0,0,0,0.8);
+        .container {
+            width: 780px;
+            background: #19191a;
+            border-radius: 12px;
             overflow: hidden;
+            border: 1px solid #333336;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.8);
             text-align: center;
         }
-        .cover {
+        .banner-img {
             width: 100%;
-            height: 240px;
-            background: #222 url('https://sun9-28.userapi.com/impf/...') center/cover no-repeat;
-            background-color: #262628;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 24px;
-            font-weight: bold;
+            height: auto;
+            max-height: 260px;
+            object-fit: cover;
+            display: block;
             border-bottom: 2px solid #5181b8;
         }
         .info {
             padding: 20px;
         }
-        .server-title {
+        .title {
             font-size: 22px;
             font-weight: bold;
-            margin-bottom: 8px;
+            margin-bottom: 10px;
+            color: #ffffff;
         }
-        .ip-badge {
+        .ip {
             display: inline-block;
-            background: #29292d;
+            background: #242426;
             color: #4bb34b;
-            padding: 6px 14px;
+            padding: 8px 16px;
             border-radius: 6px;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: bold;
+            font-family: monospace;
             margin-bottom: 15px;
-            border: 1px solid #3e3e42;
+            border: 1px solid #38383c;
         }
-        .text {
-            color: #828286;
-            font-size: 14px;
-            line-height: 1.4;
+        .link {
+            color: #5181b8;
+            font-size: 16px;
+            text-decoration: none;
+            font-weight: bold;
+            display: block;
         }
     </style>
 </head>
 <body>
-    <div class="card">
-        <div class="cover">
-            ТЮРЕМНЫЙ БЛОК | JAILBREAK | CSS
-        </div>
+    <div class="container">
+        <!-- Прямое изображение оформления сообщества -->
+        <img class="banner-img" src="https://sun9-28.userapi.com/impf/c848520/v848520773/19d08e/Ff3jP-Q5MzA.jpg?size=1590x530&quality=95&crop=0,0,1590,530&sign=fa349ff0894ea511c5e622b7d27e2832&type=album" alt="Тюремный Блок">
+        
         <div class="info">
-            <div class="server-title">Официальное сообщество сервера</div>
-            <div class="ip-badge">IP: 46.174.49.59:27209</div>
-            <p class="text">vk.com/prisonblock</p>
+            <div class="title">Тюремный Блок | JailBreak | CSS</div>
+            <div class="ip">IP: 46.174.49.59:27209</div>
+            <p class="link">vk.com/prisonblock</p>
         </div>
     </div>
 </body>
