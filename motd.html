@@ -5,39 +5,53 @@
     <title>Тюремный Блок | JailBreak | CSS</title>
     <script type="text/javascript" src="https://vk.com/js/api/openapi.js?169"></script>
     <style>
+        * {
+            box-sizing: border-box;
+        }
         body {
             margin: 0;
-            padding: 0;
-            background-color: #1a1a1a;
+            padding: 10px;
+            background-color: #141414;
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
+            justify-content: center;
             min-height: 100vh;
-            color: #e1e1e1;
             font-family: Arial, sans-serif;
+            overflow: hidden;
         }
         .header {
-            margin-bottom: 15px;
-            font-size: 22px;
+            margin-bottom: 12px;
+            font-size: 20px;
             font-weight: bold;
+        }
+        .header a {
             color: #ffffff;
-            text-shadow: 0 2px 4px rgba(0,0,0,0.6);
+            text-decoration: none;
+        }
+        #vk_groups {
+            border-radius: 8px;
+            overflow: hidden;
+            background-color: #222222;
         }
     </style>
 </head>
 <body>
-    <div class="header">Тюремный Блок | JailBreak | CSS</div>
+    <div class="header">
+        <a href="https://vk.ru/prisonblock" target="_blank">Тюремный Блок | JailBreak | CSS</a>
+    </div>
+
     <div id="vk_groups"></div>
+
     <script type="text/javascript">
         VK.Widgets.Group("vk_groups", {
-            mode: 3,           // Отображение стены с новостями
+            mode: 3,           // Стена с новостями
             width: "650",
-            height: "480",
-            color1: "222222",  // Цвет фона виджета (тёмный)
-            color2: "FFFFFF",  // Цвет текста
-            color3: "5181B8"   // Цвет кнопок и акцентов
-        }, "prisonblock");     // Идентификатор вашего сообщества
+            height: "520",
+            color1: "222222",  // Фон
+            color2: "FFFFFF",  // Текст
+            color3: "5181B8"   // Кнопки
+        }, 219468519);         // Точный числовой ID паблика prisonblock
     </script>
 </body>
 </html>
